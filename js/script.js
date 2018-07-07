@@ -355,9 +355,9 @@ var TestimoniCarousel = $(".testimoni-carousel");
 TestimoniCarousel.owlCarousel({
     loop:true,
     margin:40,
-    items:1,
-    dots:false,
-    nav: true
+    items:3,
+    nav: true,
+    navText: [ "<i class='material-icons'>navigate_before</i>", "<i class='material-icons'>navigate_next</i>"]
 });
 
 var ClientCarousel = $(".client-carousel");
@@ -366,17 +366,6 @@ ClientCarousel.owlCarousel({
     margin:40,
     items:5
 });
-
-var VisiMisiCarousel = $(".VisiMisiCarousel");
-VisiMisiCarousel.owlCarousel({
-    loop:true,
-    margin:40,
-    autoPlay: 1000,
-    items:1,
-    dots: false,
-    nav: true
-});
-
 
 $('.navbar-toggler').on('click', function(event) {
 	event.preventDefault();
